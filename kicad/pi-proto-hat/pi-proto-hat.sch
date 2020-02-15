@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Pi-Proto-Hat"
 Date "2020-02-15"
-Rev "2"
+Rev "3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pi-proto-hat"
 Comment2 ""
@@ -428,19 +428,11 @@ Wire Wire Line
 Wire Wire Line
 	4900 2250 5300 2250
 Wire Wire Line
-	4900 2350 5300 2350
-Wire Wire Line
-	4900 2450 5300 2450
-Wire Wire Line
 	4900 2550 5300 2550
 Wire Wire Line
 	4900 2650 5300 2650
 Wire Wire Line
 	4900 2750 5300 2750
-Wire Wire Line
-	4900 2850 5300 2850
-Wire Wire Line
-	4900 2950 5300 2950
 Wire Wire Line
 	4900 3050 5300 3050
 Text Label 4900 1550 2    50   ~ 0
@@ -565,4 +557,183 @@ F 3 "" H 7900 1200 50  0000 C CNN
 $EndComp
 Text Label 4900 1350 2    50   ~ 0
 GPIO23(GEN4)
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom J2
+U 1 1 5E47EDE2
+P 9550 1100
+F 0 "J2" V 9100 1050 50  0000 L CNN
+F 1 "Conn_02x22_Top_Bottom" V 9200 650 50  0000 L CNN
+F 2 "Proto_Area:Proto_Area_22x02" H 9550 1100 50  0001 C CNN
+F 3 "~" H 9550 1100 50  0001 C CNN
+	1    9550 1100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4900 2350 5300 2350
+Wire Wire Line
+	4900 2850 5300 2850
+Wire Wire Line
+	8550 1400 8650 1400
+Connection ~ 8650 1400
+Wire Wire Line
+	8650 1400 8750 1400
+Connection ~ 8750 1400
+Wire Wire Line
+	8750 1400 8850 1400
+Connection ~ 8850 1400
+Wire Wire Line
+	8850 1400 8950 1400
+Connection ~ 8950 1400
+Wire Wire Line
+	8950 1400 9050 1400
+Connection ~ 9050 1400
+Wire Wire Line
+	9050 1400 9150 1400
+Connection ~ 9150 1400
+Wire Wire Line
+	9150 1400 9250 1400
+Connection ~ 9250 1400
+Wire Wire Line
+	9250 1400 9350 1400
+Connection ~ 9350 1400
+Wire Wire Line
+	9350 1400 9450 1400
+Connection ~ 9450 1400
+Wire Wire Line
+	9450 1400 9550 1400
+Connection ~ 9550 1400
+Wire Wire Line
+	9550 1400 9650 1400
+Connection ~ 9650 1400
+Wire Wire Line
+	9650 1400 9750 1400
+Connection ~ 9750 1400
+Wire Wire Line
+	9750 1400 9850 1400
+Connection ~ 9850 1400
+Wire Wire Line
+	9850 1400 9950 1400
+Connection ~ 9950 1400
+Wire Wire Line
+	9950 1400 10050 1400
+Connection ~ 10050 1400
+Wire Wire Line
+	10050 1400 10150 1400
+Connection ~ 10150 1400
+Wire Wire Line
+	10150 1400 10250 1400
+Connection ~ 10250 1400
+Wire Wire Line
+	10250 1400 10350 1400
+Connection ~ 10350 1400
+Wire Wire Line
+	10350 1400 10450 1400
+Connection ~ 10450 1400
+Wire Wire Line
+	10450 1400 10550 1400
+Connection ~ 10550 1400
+Wire Wire Line
+	10550 1400 10650 1400
+$Comp
+L power:GND #PWR0109
+U 1 1 5E49E1AA
+P 10650 1400
+F 0 "#PWR0109" H 10650 1150 50  0001 C CNN
+F 1 "GND" H 10650 1250 50  0000 C CNN
+F 2 "" H 10650 1400 50  0000 C CNN
+F 3 "" H 10650 1400 50  0000 C CNN
+	1    10650 1400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10650 1400
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E4A9750
+P 8550 750
+F 0 "#PWR0110" H 8550 600 50  0001 C CNN
+F 1 "+5V" H 8550 890 50  0000 C CNN
+F 2 "" H 8550 750 50  0000 C CNN
+F 3 "" H 8550 750 50  0000 C CNN
+	1    8550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5E4AA778
+P 10650 750
+F 0 "#PWR0111" H 10650 600 50  0001 C CNN
+F 1 "+3.3V" H 10650 890 50  0000 C CNN
+F 2 "" H 10650 750 50  0000 C CNN
+F 3 "" H 10650 750 50  0000 C CNN
+	1    10650 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 900  8650 900 
+Connection ~ 8650 900 
+Wire Wire Line
+	8650 900  8750 900 
+Connection ~ 8750 900 
+Wire Wire Line
+	8750 900  8850 900 
+Connection ~ 8850 900 
+Wire Wire Line
+	8850 900  8950 900 
+Connection ~ 8950 900 
+Wire Wire Line
+	8950 900  9050 900 
+Connection ~ 9050 900 
+Wire Wire Line
+	9050 900  9150 900 
+Connection ~ 9150 900 
+Wire Wire Line
+	9150 900  9250 900 
+Connection ~ 9250 900 
+Wire Wire Line
+	9250 900  9350 900 
+Connection ~ 9350 900 
+Wire Wire Line
+	9350 900  9450 900 
+Connection ~ 9450 900 
+Wire Wire Line
+	9450 900  9550 900 
+Wire Wire Line
+	9650 900  9750 900 
+Connection ~ 9750 900 
+Wire Wire Line
+	9750 900  9850 900 
+Connection ~ 9850 900 
+Wire Wire Line
+	9850 900  9950 900 
+Connection ~ 9950 900 
+Wire Wire Line
+	9950 900  10050 900 
+Connection ~ 10050 900 
+Wire Wire Line
+	10050 900  10150 900 
+Connection ~ 10150 900 
+Wire Wire Line
+	10150 900  10250 900 
+Connection ~ 10250 900 
+Wire Wire Line
+	10250 900  10350 900 
+Connection ~ 10350 900 
+Wire Wire Line
+	10350 900  10450 900 
+Connection ~ 10450 900 
+Wire Wire Line
+	10450 900  10550 900 
+Connection ~ 10550 900 
+Wire Wire Line
+	10550 900  10650 900 
+Wire Wire Line
+	10650 750  10650 900 
+Connection ~ 10650 900 
+Wire Wire Line
+	8550 750  8550 900 
+Connection ~ 8550 900 
+Wire Wire Line
+	4900 2450 5300 2450
+Wire Wire Line
+	4900 2950 5300 2950
 $EndSCHEMATC
