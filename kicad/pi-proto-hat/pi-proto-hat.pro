@@ -1,4 +1,4 @@
-update=Do 30 Jan 2020 17:08:51 CET
+update=Sa 15 Feb 2020 09:22:01 CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -57,7 +57,7 @@ SilkTextUpright=1
 CopperLineWidth=0.09999999999999999
 CopperTextSizeV=1
 CopperTextSizeH=1
-CopperTextThickness=0.3
+CopperTextThickness=0.15
 CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.09999999999999999
@@ -71,7 +71,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -227,11 +227,11 @@ Enabled=1
 [pcbnew/Layer.Edge.Cuts]
 Enabled=1
 [pcbnew/Layer.Margin]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.CrtYd]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.CrtYd]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.Fab]
 Enabled=0
 [pcbnew/Layer.F.Fab]
@@ -253,7 +253,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
 Clearance=0.2
-TrackWidth=0.5
+TrackWidth=1.2
 ViaDiameter=1
 ViaDrill=0.7
 uViaDiameter=0.5

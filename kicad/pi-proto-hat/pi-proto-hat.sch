@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pi-Proto-Hat"
-Date "2020-01-30"
-Rev "1"
+Date "2020-02-15"
+Rev "2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pi-proto-hat"
 Comment2 ""
@@ -349,61 +349,55 @@ Wire Wire Line
 Wire Wire Line
 	800  2200 800  2450
 $Comp
-L Connector:Conn_01x24_Male J1
+L Connector:Conn_01x22_Male J1
 U 1 1 5E33021D
-P 5500 2150
+P 5500 2050
 F 0 "J1" H 5900 700 50  0000 R CNN
-F 1 "Conn_01x24_Male" H 6100 800 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical" H 5500 2150 50  0001 C CNN
-F 3 "~" H 5500 2150 50  0001 C CNN
-	1    5500 2150
+F 1 "Conn_01x22_Male" H 6150 800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical" H 5500 2050 50  0001 C CNN
+F 3 "~" H 5500 2050 50  0001 C CNN
+	1    5500 2050
 	-1   0    0    1   
 $EndComp
 Text Label 4900 950  2    50   ~ 0
-GPIO14(TXD0)
-Text Label 4900 1050 2    50   ~ 0
-GPIO15(RXD0)
-Text Label 4900 1150 2    50   ~ 0
 GPIO4(GCLK)
-Text Label 4900 1250 2    50   ~ 0
+Text Label 4900 1150 2    50   ~ 0
 GPIO17(GEN0)
-Text Label 4900 1350 2    50   ~ 0
+Text Label 4900 1050 2    50   ~ 0
 GPIO18(GEN1)(PWM0)
-Text Label 4900 1450 2    50   ~ 0
+Text Label 4900 1250 2    50   ~ 0
 GPIO27(GEN2)
-Text Label 4900 1550 2    50   ~ 0
+Text Label 4900 1450 2    50   ~ 0
 GPIO22(GEN3)
 Text Label 4900 1650 2    50   ~ 0
-GPIO23(GEN4)
-Text Label 4900 1850 2    50   ~ 0
 GPIO25(GEN6)
-Text Label 4900 1950 2    50   ~ 0
+Text Label 4900 1750 2    50   ~ 0
 GPIO10(SPI0_MOSI)
-Text Label 4900 2050 2    50   ~ 0
+Text Label 4900 1850 2    50   ~ 0
 GPIO9(SPI0_MISO)
-Text Label 4900 2150 2    50   ~ 0
+Text Label 4900 1950 2    50   ~ 0
 GPIO11(SPI0_SCK)
-Text Label 4900 2250 2    50   ~ 0
+Text Label 4900 2050 2    50   ~ 0
 GPIO8(SPI0_CE_0)
-Text Label 4900 2350 2    50   ~ 0
+Text Label 4900 2150 2    50   ~ 0
 GPIO7(SPI1_CE_1)
-Text Label 4900 2450 2    50   ~ 0
+Text Label 4900 2250 2    50   ~ 0
 GPIO5
-Text Label 4900 2550 2    50   ~ 0
+Text Label 4900 2350 2    50   ~ 0
 GPIO6
-Text Label 4900 2650 2    50   ~ 0
+Text Label 4900 2450 2    50   ~ 0
 GPIO12(PWM0)
-Text Label 4900 2750 2    50   ~ 0
+Text Label 4900 2550 2    50   ~ 0
 GPIO13(PWM1)
-Text Label 4900 2850 2    50   ~ 0
+Text Label 4900 2650 2    50   ~ 0
 GPIO16
-Text Label 4900 2950 2    50   ~ 0
+Text Label 4900 2750 2    50   ~ 0
 GPIO19(SPI1_MISO)
-Text Label 4900 3050 2    50   ~ 0
+Text Label 4900 2850 2    50   ~ 0
 GPIO20(SPI1_MOSI)
-Text Label 4900 3150 2    50   ~ 0
+Text Label 4900 2950 2    50   ~ 0
 GPIO21(SPI1_SCK)
-Text Label 4900 3250 2    50   ~ 0
+Text Label 4900 3050 2    50   ~ 0
 GPIO26
 Wire Wire Line
 	4900 950  5300 950 
@@ -449,20 +443,16 @@ Wire Wire Line
 	4900 2950 5300 2950
 Wire Wire Line
 	4900 3050 5300 3050
-Wire Wire Line
-	4900 3150 5300 3150
-Wire Wire Line
-	4900 3250 5300 3250
-Text Label 4900 1750 2    50   ~ 0
+Text Label 4900 1550 2    50   ~ 0
 GPIO24(GEN5)
 NoConn ~ 2400 2400
 NoConn ~ 2900 2400
 $Comp
-L Connector:Conn_01x04_Male J2
+L Connector:Conn_01x04_Male I2C1
 U 1 1 5E3AE486
 P 6400 1150
-F 0 "J2" H 6550 700 50  0000 R CNN
-F 1 "Conn_I2C" H 6650 800 50  0000 R CNN
+F 0 "I2C1" H 6750 700 50  0000 R CNN
+F 1 "Conn_I2C" H 6800 800 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6400 1150 50  0001 C CNN
 F 3 "~" H 6400 1150 50  0001 C CNN
 	1    6400 1150
@@ -490,9 +480,9 @@ F 3 "" H 6050 1050 50  0000 C CNN
 	1    6050 1050
 	0    1    1    0   
 $EndComp
-Text Label 6050 1250 2    50   ~ 0
-GPIO3(SCL1)
 Text Label 6050 1150 2    50   ~ 0
+GPIO3(SCL1)
+Text Label 6050 1250 2    50   ~ 0
 GPIO2(SDA1)
 Wire Wire Line
 	6050 950  6200 950 
@@ -502,4 +492,77 @@ Wire Wire Line
 	6050 1150 6200 1150
 Wire Wire Line
 	6050 1250 6200 1250
+$Comp
+L Connector:Conn_01x04_Male I2C2
+U 1 1 5E46D17D
+P 7300 1150
+F 0 "I2C2" H 7600 700 50  0000 R CNN
+F 1 "Conn_I2C" H 7650 800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7300 1150 50  0001 C CNN
+F 3 "~" H 7300 1150 50  0001 C CNN
+	1    7300 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5E46D187
+P 6950 950
+F 0 "#PWR0106" H 6950 800 50  0001 C CNN
+F 1 "+3.3V" V 6950 1200 50  0000 C CNN
+F 2 "" H 6950 950 50  0000 C CNN
+F 3 "" H 6950 950 50  0000 C CNN
+	1    6950 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E46D191
+P 6950 1050
+F 0 "#PWR0107" H 6950 800 50  0001 C CNN
+F 1 "GND" H 6950 900 50  0000 C CNN
+F 2 "" H 6950 1050 50  0000 C CNN
+F 3 "" H 6950 1050 50  0000 C CNN
+	1    6950 1050
+	0    1    1    0   
+$EndComp
+Text Label 6950 1150 2    50   ~ 0
+GPIO3(SCL1)
+Text Label 6950 1250 2    50   ~ 0
+GPIO2(SDA1)
+Wire Wire Line
+	6950 950  7100 950 
+Wire Wire Line
+	6950 1050 7100 1050
+Wire Wire Line
+	6950 1150 7100 1150
+Wire Wire Line
+	6950 1250 7100 1250
+$Comp
+L Connector:Conn_01x03_Male UART1
+U 1 1 5E470F02
+P 8100 1100
+F 0 "UART1" H 8500 700 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8600 800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8100 1100 50  0001 C CNN
+F 3 "~" H 8100 1100 50  0001 C CNN
+	1    8100 1100
+	-1   0    0    1   
+$EndComp
+Text Label 7900 1000 2    50   ~ 0
+GPIO14(TXD0)
+Text Label 7900 1100 2    50   ~ 0
+GPIO15(RXD0)
+$Comp
+L power:GND #PWR0108
+U 1 1 5E4850A5
+P 7900 1200
+F 0 "#PWR0108" H 7900 950 50  0001 C CNN
+F 1 "GND" H 7900 1050 50  0000 C CNN
+F 2 "" H 7900 1200 50  0000 C CNN
+F 3 "" H 7900 1200 50  0000 C CNN
+	1    7900 1200
+	0    1    1    0   
+$EndComp
+Text Label 4900 1350 2    50   ~ 0
+GPIO23(GEN4)
 $EndSCHEMATC
